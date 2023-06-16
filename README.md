@@ -3,6 +3,8 @@
 ## Overview
 sqlmap_tcp_proxy is a tcp proxy for sqlmap. Since sqlmap only supports http requests, this proxy is used to convert the parameters of sqlmap into tcp messages to be sent.
 
+Adding the tcp response back in the web page can theoretically help sqlmap to get valid information, but the actual use is recommended to redirect the tcp output to the file to view it by itself.
+
 ## How to use?
 ```python
 python3 sqlproxy.py ip port Start_position End_position Initial_hexadecimal_message
@@ -26,4 +28,6 @@ After running this command, the value of a will replace the first 11 and end wit
 
 ## Demo
 
-![demo](./demo.gif)
+![demo](./gifs/demo.gif)
+
+![demo](./gifs/demo2.gif)
